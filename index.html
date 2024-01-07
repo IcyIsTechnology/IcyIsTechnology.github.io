@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居中示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            height: 200px;
+            background-image: url('path-to-your-image.jpg');
+            background-size: cover;
+            border-radius: 5px;
+        }
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .button-row button {
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-row button:hover {
+            background-color: #0056b3;
+        }
+        .button-row button:active {
+            background-color: #004578;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="path-to-your-image.jpg" alt="Image" />
+        <div class="button-row">
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+            <button class="button">Button 3</button>
+            <button class="button">Button 4</button>
+        </div>
+    </div>
+</body>
+</html>
